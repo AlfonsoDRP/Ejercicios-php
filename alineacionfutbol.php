@@ -9,7 +9,18 @@
 <body>
     <?php
 
+    $furbo = array("portero" => array("Karius"),
+    "defensas" => array ("Robertson","Lovren","van dijk", "Alexander-Arnold"),
+    "Centrales" => array("Milner", "Henderson", "Wijnaldum"),
+    "Delanteros" => array("Salah","Firmino","Mané"));
+
     
+    foreach($furbo as $posicion => $jugador){
+        echo "<h1>$posicion</h1>";
+        foreach($jugador as $indice=>$valor){
+            echo "<p> $indice:$valor </p>";
+        }
+    }
 
     ?>
 </body>
