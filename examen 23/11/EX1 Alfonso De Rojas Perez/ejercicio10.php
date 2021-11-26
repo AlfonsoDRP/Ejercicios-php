@@ -36,7 +36,7 @@
             }else if ($edad[$i]>45){
                 $sueldos[$i]=$sueldos[$i]+($sueldos[$i]*(15/100));
             }
-        }
+        }  
     }
     echo "Sueldos:<br>";
     foreach ($sueldos as $key => $val) {
