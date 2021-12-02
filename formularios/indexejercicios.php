@@ -31,6 +31,8 @@
         <a href="indextriangulo.php">Ejercicio del area del triangulo</a><br>
         <a href="indexbaseimponible.php">Ejercicio de la base imponible</a><br>
         <a href="indexsalario.php">Ejercicio del salario</a><br>
+        <a href="indexcono.php">Ejercicio del cono</a><br>
+        <a href="indexmbkb.php">Ejercicio de los MB y los KB</a><br>
     </div>
 </body>
 
