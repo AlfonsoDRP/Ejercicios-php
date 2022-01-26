@@ -17,17 +17,11 @@ $contadorNumeros = 0;
 $numeroTexto = "";
 }
 
-////////////////////////////////////////////////////////////////
-// Programa principal una vez recogidos los datos del array.
-// El array con los números es $numero
-////////////////////////////////////////////////////////////////
 
 if ($contadorNumeros == 15) {
-$numeroTexto = $numeroTexto . " " . $n; // añade el último número leído
-$numeroTexto = substr($numeroTexto, 2); // quita espacios sobrantes del inicio vacio
-$numero = explode(" ", $numeroTexto); //Devuelve un array de String eliminando "
-
-//Bucle para mostrar los numeros con su correspondiente maximo y minimo
+$numeroTexto = $numeroTexto . " " . $n; 
+$numeroTexto = substr($numeroTexto, 2); 
+$numero = explode(" ", $numeroTexto); 
 echo "Array normal<br>";
 foreach ($numero as $n) {
 echo "$n ";
@@ -39,10 +33,7 @@ for ($i=-1; $i<=12; $i++){
 }
 }
 
-////////////////////////////////////////////////////////////////
 
-
-// Pide número y añade el actual a la cadena
 if (($contadorNumeros < 15) || (!isset($n))) {
 ?>
 <form action="rotararray.php" method="get">

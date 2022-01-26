@@ -19,18 +19,15 @@ $contadorNumeros = 0;
 $numeroTexto = "";
 }
 
-////////////////////////////////////////////////////////////////
-// Programa principal una vez recogidos los datos del array.
-// El array con los números es $numero
-////////////////////////////////////////////////////////////////
+
 
 if ($contadorNumeros == 10) {
-$numeroTexto = $numeroTexto . " " . $n; // añade el último número leído
-$numeroTexto = substr($numeroTexto, 2); // quita espacios sobrantes del inicio vacio
-$numero = explode(" ", $numeroTexto); //Devuelve un array de String eliminando "
+$numeroTexto = $numeroTexto . " " . $n; 
+$numeroTexto = substr($numeroTexto, 2); 
+$numero = explode(" ", $numeroTexto); 
 $maximo = -PHP_INT_MAX;
 $minimo = PHP_INT_MAX;
-//Recorremos el array para buscar el maximo y minimo
+
 foreach ($numero as $n) {
 if ($n < $minimo) {
 $minimo = $n;
@@ -39,7 +36,7 @@ if ($n > $maximo) {
 $maximo = $n;
 }
 }
-//Bucle para mostrar los numeros con su correspondiente maximo y minimo
+
 foreach ($numero as $n) {
 if ($n == $minimo) {
 echo "$n minimo<br>";
@@ -50,10 +47,10 @@ echo "$n<br>";
 }
 }
 }
-////////////////////////////////////////////////////////////////
 
 
-// Pide número y añade el actual a la cadena
+
+
 if (($contadorNumeros < 10) || (!isset($n))) {
 ?>
 <form action="indexgordo.php" method="get">
